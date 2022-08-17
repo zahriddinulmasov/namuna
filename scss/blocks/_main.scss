@@ -1,0 +1,17 @@
+.main {
+    background-image: url("../../images/istockphoto-918508630-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    &__btn{
+        width: 100%;
+    }
+}
+
+.form__top input::placeholder{
+    color: #ffffff;
+}

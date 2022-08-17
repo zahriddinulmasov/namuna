@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>SCSS BEM STARTER</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="./images/unnamed.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>MoneyGram</title>
+  </head>
+  <body class="position-relative">
+    <style>
+      .form__input::placeholder {
+        color: blue !important;
+        font-weight: 700;
+      }
+      .form__select {
+        color: blue !important;
+        font-weight: 700;
+      }
+      .form-control {
+        color: blue !important;
+        font-weight: 700;
+      }
+    </style>
+
+    <main class="main">
+      <div class="container">
+        <div
+          class="main__wrapper w-25 position-absolute top-50 start-50 translate-middle"
+        >
+          <h1
+            class="main__title m-0 mb-3 text-uppercase text-warning fs-3 fw-bolder text-center"
+          >
+            money exchange
+          </h1>
+
+          <form class="form">
+            <input
+              class="form__input mb-2 text-primary form-control text-capitalize"
+              type="number"
+              placeholder="Valuta"
+              required
+            />
+
+            <select
+              class="form__select text-light mb-2 form-select"
+              name="valuta"
+              required
+            ></select>
+
+            <div class="mb-2 form-control ">
+              <span class="form__result"></span> so'm
+            </div>
+
+            <button
+              class="form__btn btn btn-outline-warning text-capitalize fw-semibold"
+            >
+              turn
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
 
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
-</body>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
